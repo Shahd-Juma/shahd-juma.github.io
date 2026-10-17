@@ -137,3 +137,16 @@ function switchPhoto() {
 }
 
 photoBtn.addEventListener("click", switchPhoto);
+const topBtn = document.getElementById("top-btn");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+});
+
+topBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});

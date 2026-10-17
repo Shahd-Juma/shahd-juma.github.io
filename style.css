@@ -1,9 +1,11 @@
 :root {
-    --main-color: #14b8a6;
-    --accent-color: #0369a1;
-    --text-color: #1e293b;
-    --bg-color: #e0f2fe;
+    --main-color: #0284c7;
+    --accent-color: #6F1594;
+    --text-color: #221A6C;
+    --bg-color: #f5edff;
     --card-color: #ffffff;
+    --on-main: #ffffff;
+    --on-accent: #ffffff;
 }
 body {
     font-family: Arial, sans-serif;
@@ -68,6 +70,17 @@ h2 {
     padding: 20px;
     border-radius: 12px;
     border-top: 5px solid var(--main-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+a.project {
+    text-decoration: none;
+    color: inherit;
 }
 
 .project h3 {
@@ -96,7 +109,7 @@ h2 {
 
 .contact-form button {
     background-color: var(--main-color);
-    color: white;
+    color: var(--on-main);
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -105,26 +118,28 @@ h2 {
 }
 footer {
     background-color: var(--accent-color);
-    color: white;
+    color: var(--on-accent);
     text-align: center;
     padding: 25px;
 }
 
 footer a {
-    color: white;
+    color: var(--on-accent);
     font-weight: bold;
 }
 body.dark-mode {
-    --main-color: #2dd4bf;
-    --accent-color: #7dd3fc;
-    --text-color: #e2e8f0;
-    --bg-color: #0f172a;
-    --card-color: #1e293b;
+    --main-color: #F787F8;
+    --accent-color: #03CCFF;
+    --text-color: #ece8ff;
+    --bg-color: #140d3d;
+    --card-color: #2a1660;
+    --on-main: #140d3d;
+    --on-accent: #140d3d;
 }
 
 #theme-btn {
     background-color: var(--main-color);
-    color: white;
+    color: var(--on-main);
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -166,7 +181,7 @@ body.dark-mode {
 
 #photo-btn {
     background-color: var(--main-color);
-    color: white;
+    color: var(--on-main);
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -204,4 +219,26 @@ body.dark-mode {
         flex-direction: column;
         text-align: center;
     }
+}
+#top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--on-main);
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--main-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+#top-btn.show {
+    opacity: 1;
+    pointer-events: auto;
 }

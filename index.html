@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAHD JUM'AH</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <h1 class="logo" data-key="logo">SHAHD JUM'AH</h1>
+            <div class="nav-links">
+                <a href="#about" data-key="nav-about">About</a>
+                <a href="#skills" data-key="nav-skills">Skills</a>
+                <a href="#projects" data-key="nav-projects">Projects</a>
+                <a href="#contact" data-key="nav-contact">Contact</a>
+            </div>
+            <div class="nav-buttons">
+                <button id="theme-btn">☀️ Light mode</button>
+                <button id="lang-btn">العربية</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="photo-box">
+                <img src="assets/profile.jpeg" alt="Photo of Shahd Jum'ah" class="profile-photo" id="profile-photo">
+                <button id="photo-btn" data-key="photo-btn">Switch photo</button>
+            </div>
+            <div class="about-text">
+                <h2 data-key="about-title">About Me</h2>
+                <p data-key="about-text">I'm Shahd Jum'ah, a Fintech and Risk Management graduate currently building my
+                    tech skills at 42 Amman. So far I've learned HTML, CSS, JavaScript, Git and the Linux terminal. I
+                    bring curiosity, commitment, self-learning, and a fast-learning mindset to everything I work on.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 data-key="skills-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">Git</div>
+                <div class="skill" data-key="skill-linux">Linux Terminal</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 data-key="projects-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3 data-key="p0-title">Project 00: Linux & Git</h3>
+                    <p data-key="p0-text">Navigating the Linux terminal and managing code with Git and GitHub.</p>
+                </div>
+                <div class="project">
+                    <h3 data-key="p1-title">Project 01: HTML</h3>
+                    <p data-key="p1-text">Building the structure of web pages with semantic HTML5.</p>
+                </div>
+                <div class="project">
+                    <h3 data-key="p2-title">Project 02: CSS</h3>
+                    <p data-key="p2-text">Styling pages with Flexbox, positioning, shapes, colors and animations.</p>
+                </div>
+                <div class="project">
+                    <h3 data-key="p3-title">Project 03: JavaScript</h3>
+                    <p data-key="p3-text">Making pages interactive: functions, the DOM, events, a counter and a task
+                        manager.</p>
+                </div>
+                <div class="project">
+                    <h3 data-key="p4-title">Project 04: Personal Portfolio</h3>
+                    <p data-key="p4-text">Designing and building this responsive portfolio from scratch with HTML, CSS
+                        and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-key="contact-title">Contact Me</h2>
+            <form class="contact-form">
+                <label for="name" data-key="label-name">Name</label>
+                <input type="text" id="name" placeholder="Your name" data-placeholder="ph-name">
+
+                <label for="email" data-key="label-email">Email</label>
+                <input type="email" id="email" placeholder="Your email" data-placeholder="ph-email">
+
+                <label for="message" data-key="label-message">Message</label>
+                <textarea id="message" placeholder="Your message" data-placeholder="ph-message"></textarea>
+
+                <button type="submit" data-key="send-btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p data-key="footer-text">© 2026 SHAHD JUM'AH. All rights reserved.</p>
+        <a href="https://github.com/juma-shahd" target="_blank">GitHub</a>
+    </footer>
+
+</body>
+
+</html>

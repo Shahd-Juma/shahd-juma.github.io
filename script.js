@@ -39,8 +39,7 @@ const translations = {
         "label-email": "Email",
         "label-message": "Message",
         "send-btn": "Send",
-        "footer-text": "© 2026 SHAHD JUM'AH. All rights reserved.",
-        "ph-name": "Your name",
+        "footer-text": "© 2026 SHAHD JUM'AH",        "ph-name": "Your name",
         "ph-email": "Your email",
         "ph-message": "Your message"
     },
@@ -71,8 +70,7 @@ const translations = {
         "label-email": "البريد الإلكتروني",
         "label-message": "الرسالة",
         "send-btn": "إرسال",
-        "footer-text": "© 2026 شهد جمعة. جميع الحقوق محفوظة.",
-        "ph-name": "اسمك",
+        "footer-text": "© 2026 شهد جمعة",        "ph-name": "اسمك",
         "ph-email": "بريدك الإلكتروني",
         "ph-message": "رسالتك"
     }

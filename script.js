@@ -39,9 +39,11 @@ const translations = {
         "label-email": "Email",
         "label-message": "Message",
         "send-btn": "Send",
-        "footer-text": "© 2026 SHAHD JUM'AH",        "ph-name": "Your name",
+        "footer-text": "© 2026 SHAHD JUM'AH",
+        "ph-name": "Your name",
         "ph-email": "Your email",
-        "ph-message": "Your message"
+        "ph-message": "Your message",
+        "cv-btn": "📄 View CV"
     },
         ar: {
         "logo": "شهد جمعة",
@@ -70,9 +72,11 @@ const translations = {
         "label-email": "البريد الإلكتروني",
         "label-message": "الرسالة",
         "send-btn": "إرسال",
-        "footer-text": "© 2026 شهد جمعة",        "ph-name": "اسمك",
+        "footer-text": "© 2026 شهد جمعة",
+        "ph-name": "اسمك",
         "ph-email": "بريدك الإلكتروني",
-        "ph-message": "رسالتك"
+        "ph-message": "رسالتك",
+        "cv-btn": "📄 عرض السيرة الذاتية"
     }
 };
 const langBtn = document.getElementById("lang-btn");
@@ -135,6 +139,7 @@ function switchPhoto() {
 }
 
 photoBtn.addEventListener("click", switchPhoto);
+
 const topBtn = document.getElementById("top-btn");
 
 window.addEventListener("scroll", function () {

@@ -92,6 +92,11 @@ a.project {
     flex-direction: column;
     gap: 10px;
     max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    text-align: center;
 }
 
 .contact-form input,

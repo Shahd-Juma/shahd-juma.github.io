@@ -34,7 +34,10 @@
             </div>
             <div class="about-text">
                 <h2 data-key="about-title">About Me</h2>
-                <p data-key="about-text">I'm Shahd Jum'ah, with a background in Fintech and Risk Management, currently building my tech skills at 42 Amman. So far I've learned HTML, CSS, JavaScript, Git and the Linux terminal. I bring curiosity, commitment, self-learning, and a fast-learning mindset to everything I work on.</p>
+                <p data-key="about-text">I'm Shahd Jum'ah, with a background in Fintech and Risk Management, currently
+                    building my tech skills at 42 Amman. So far I've learned HTML, CSS, JavaScript, Git and the Linux
+                    terminal. I bring curiosity, commitment, self-learning, and a fast-learning mindset to everything I
+                    work on.</p>
                 <a href="assets/Shahd-Jumah-CV.pdf" target="_blank" id="cv-btn" data-key="cv-btn">📄 View CV</a>
             </div>
         </section>
@@ -67,26 +70,32 @@
                 </a>
                 <a class="project" href="https://github.com/Shahd-Juma/js-project" target="_blank">
                     <h3 data-key="p3-title">Project 03: JavaScript</h3>
-                    <p data-key="p3-text">Making pages interactive: functions, the DOM, events, a counter and a task manager.</p>
+                    <p data-key="p3-text">Making pages interactive: functions, the DOM, events, a counter and a task
+                        manager.</p>
                 </a>
                 <a class="project" href="https://github.com/Shahd-Juma/portfolio-project" target="_blank">
                     <h3 data-key="p4-title">Project 04: Personal Portfolio</h3>
-                    <p data-key="p4-text">Designing and building this responsive portfolio from scratch with HTML, CSS and JavaScript.</p>
+                    <p data-key="p4-text">Designing and building this responsive portfolio from scratch with HTML, CSS
+                        and JavaScript.</p>
                 </a>
             </div>
         </section>
 
         <section id="contact">
             <h2 data-key="contact-title">Contact Me</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/xbggjvgz" method="POST">
                 <label for="name" data-key="label-name">Name</label>
-                <input type="text" id="name" placeholder="Your name" data-placeholder="ph-name">
+                <input type="text" id="name" name="name" placeholder="Your name" data-placeholder="ph-name" required>
 
                 <label for="email" data-key="label-email">Email</label>
-                <input type="email" id="email" placeholder="Your email" data-placeholder="ph-email">
+                <input type="email" id="email" name="email" placeholder="Your email" data-placeholder="ph-email"
+                    required>
 
                 <label for="message" data-key="label-message">Message</label>
-                <textarea id="message" placeholder="Your message" data-placeholder="ph-message"></textarea>
+                <textarea id="message" name="message" placeholder="Your message" data-placeholder="ph-message"
+                    required></textarea>
+
+                <input type="hidden" name="_subject" value="New message from my portfolio">
 
                 <button type="submit" data-key="send-btn">Send</button>
             </form>

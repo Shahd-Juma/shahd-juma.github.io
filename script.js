@@ -153,3 +153,8 @@ window.addEventListener("scroll", function () {
 topBtn.addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+const contactForm = document.querySelector(".contact-form");
+
+window.addEventListener("pageshow", function () {
+    contactForm.reset();
+});
